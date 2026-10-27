@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofi Skin 🩵 | Skincare Coreano Original en Lima, Perú (Inspirado en TopBeauty)</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0284c7',
+              600: '#0369a1',
+            },
+            accent: {
+              coral: '#f43f5e',
+              rose: '#fff1f2',
+              cream: '#fffbeb',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #fcfdfe;
+      color: #1e293b;
+    }
+
+    /* Animación del Ticker de Ofertas */
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: inline-flex;
+      white-space: nowrap;
+      animation: marquee 25s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+
+    /* Glow de WhatsApp */
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+      70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+    .whatsapp-glow {
+      animation: pulseGlow 2.5s infinite;
+    }
+
+    /* Estilo del Embed TikTok */
+    .tiktok-card-container blockquote.tiktok-embed {
+      margin: 0 auto !important;
+      max-width: 100% !important;
+      min-width: 280px !important;
+      border-radius: 1.25rem !important;
+      overflow: hidden;
+    }
+
+    /* Ocultar scrollbar en carruseles táctiles */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-brand-200 selection:text-brand-600">
+
+  <!-- 1. ANNOUNCEMENT BAR (ESTILO TOPBEAUTY CON TICKER) -->
+  <div class="bg-slate-900 text-white text-xs font-semibold py-2.5 overflow-hidden border-b border-slate-800">
+    <div class="animate-marquee flex items-center gap-10">
+      <span>🚚 <strong>ENVÍOS GRATIS</strong> por compras desde S/ 199 en Lima Metropolitana</span>
+      <span>•</span>
+      <span>🫧 100% Originales y sellados traídos de Corea del Sur 🇰🇷</span>
+      <span>•</span>
+      <span>💌 Asesoría personalizada por WhatsApp al <strong>920 610 179</strong></span>
+      <span>•</span>
+      <span>⚡ Entregas rápidas 24/48 hrs en Lima 🇵🇪</span>
+      <span>•</span>
+      <span>🚚 <strong>ENVÍOS GRATIS</strong> por compras desde S/ 199 en Lima Metropolitana</span>
+      <span>•</span>
+      <span>🫧 100% Originales y sellados traídos de Corea del Sur 🇰🇷</span>
+      <span>•</span>
+      <span>💌 Asesoría personalizada por WhatsApp al <strong>920 610 179</strong></span>
+      <span>•</span>
+      <span>⚡ Entregas rápidas 24/48 hrs en Lima 🇵🇪</span>
+    </div>
+  </div>
+
+  <!-- 2. HEADER PRINCIPAL ESTILO E-COMMERCE SHOPIFY / TOPBEAUTY -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Fila superior del header: Logo, Buscador & Acciones -->
+      <div class="h-20 flex items-center justify-between gap-4 md:gap-8">
+        
+        <!-- Logo de Marca -->
+        <a href="#" class="flex items-center gap-2.5 shrink-0 group">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-brand-200 via-sky-100 to-rose-100 flex items-center justify-center text-2xl shadow-inner group-hover:scale-105 transition">
+            🩵
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif font-extrabold text-2xl tracking-tight text-slate-900 leading-tight flex items-center gap-1.5">
+              Sofi Skin <span class="text-[10px] uppercase font-sans font-extrabold tracking-wider bg-brand-50 text-brand-600 px-2 py-0.5 rounded-full border border-brand-200">K-Beauty 🇰🇷</span>
+            </span>
+            <span class="text-[11px] text-slate-500 font-medium">Original K-Beauty Store • Lima, Perú</span>
+          </div>
+        </a>
+
+        <!-- Barra de búsqueda en tiempo real (Inspirada en TopBeauty) -->
+        <div class="hidden md:flex flex-1 max-w-xl relative">
+          <div class="w-full relative">
+            <input type="text" 
+                   id="searchInputDesktop" 
+                   oninput="handleSearch(this.value)"
+                   placeholder="Buscar productos (ej. COSRX, solar, baba de caracol, acné)..." 
+                   class="w-full pl-11 pr-10 py-2.5 bg-slate-50 hover:bg-slate-100/80 focus:bg-white text-xs sm:text-sm text-slate-800 rounded-full border border-slate-200 focus:border-brand-400 focus:ring-2 focus:ring-brand-100 transition duration-200 outline-none">
+            <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+            <button id="clearSearchBtn" onclick="clearSearch()" class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600">
+              <i class="fa-solid fa-circle-xmark text-sm"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Acciones: Asesoría WhatsApp & Carrito -->
+        <div class="flex items-center gap-3 shrink-0">
+          <!-- Asesoría WhatsApp -->
+          <a href="https://wa.me/51920610179?text=Hola%20Sofi%20Skin%20🩵%20Deseo%20hacer%20una%20consulta%20y%20asesoría%20sobre%20los%20productos." target="_blank" rel="noopener noreferrer" 
+             class="hidden lg:flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border border-emerald-200 text-xs font-bold transition">
+            <i class="fa-brands fa-whatsapp text-emerald-500 text-base"></i>
+            <span>Asesoría 920 610 179</span>
+          </a>
+
+          <!-- Botón de Bolsa de Compras -->
+          <button onclick="toggleCartDrawer(true)" class="relative p-2.5 rounded-full hover:bg-brand-50 text-slate-800 hover:text-brand-600 transition flex items-center gap-2 group border border-slate-200">
+            <div class="relative">
+              <i class="fa-solid fa-bag-shopping text-xl"></i>
+              <span id="cartCount" class="absolute -top-2 -right-2.5 bg-brand-500 text-white text-[10px] font-extrabold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">0</span>
+            </div>
+            <div class="hidden sm:flex flex-col text-left text-xs leading-none">
+              <span class="text-[10px] text-slate-400 font-semibold uppercase">Mi Bolsa</span>
+              <span id="headerCartTotal" class="font-extrabold text-slate-900">S/ 0.00</span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Buscador móvil -->
+      <div class="pb-3 md:hidden">
+        <div class="relative w-full">
+          <input type="text" 
+                 id="searchInputMobile" 
+                 oninput="handleSearch(this.value)"
+                 placeholder="Buscar marca, protector solar, sérum..." 
+                 class="w-full pl-10 pr-4 py-2 bg-slate-100 text-xs text-slate-800 rounded-full border border-slate-200 focus:outline-none focus:border-brand-400">
+          <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+        </div>
+      </div>
+
+      <!-- Barra de Categorías de Navegación (Estilo TopBeauty) -->
+      <nav class="flex items-center gap-2 overflow-x-auto no-scrollbar py-2 border-t border-slate-100 text-xs font-semibold text-slate-600">
+        <button onclick="filterCategory('todos')" class="nav-cat-btn whitespace-nowrap px-3.5 py-1.5 rounded-full bg-slate-900 text-white transition">
+          ✨ Todo el Catálogo
+        </button>
+        <button onclick="filterCategory('limpieza')" class="nav-cat-btn whitespace-nowrap px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-brand-100 text-slate-700 transition">
+          🫧 Limpieza Facial
+        </button>
+        <button onclick="filterCategory('tonicos')" class="nav-cat-btn whitespace-nowrap px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-brand-100 text-slate-700 transition">
+          💧 Tónicos y Esencias
+        </button>
+        <button onclick="filterCategory('serums')" class="nav-cat-btn whitespace-nowrap px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-brand-100 text-slate-700 transition">
+          ✨ Sérums y Ampollas
+        </button>
+        <button onclick="filterCategory('hidratacion')" class="nav-cat-btn whitespace-nowrap px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-brand-100 text-slate-700 transition">
+          🧴 Hidratación y Cremas
+        </button>
+        <button onclick="filterCategory('solares')" class="nav-cat-btn whitespace-nowrap px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-brand-100 text-slate-700 transition">
+          ☀️ Protección Solar
+        </button>
+        <button onclick="filterCategory('mascarillas')" class="nav-cat-btn whitespace-nowrap px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-brand-100 text-slate-700 transition">
+          🧖‍♀️ Mascarillas & Parches
+        </button>
+        <a href="#tiktoks" class="whitespace-nowrap px-3.5 py-1.5 rounded-full bg-pink-50 text-pink-600 hover:bg-pink-100 font-bold transition flex items-center gap-1.5">
+          <i class="fa-brands fa-tiktok text-slate-900"></i> Videos @sofi.skin1
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    
+    <!-- 3. HERO BANNER ESTILO TOPBEAUTY -->
+    <section class="relative bg-gradient-to-r from-brand-100 via-sky-50 to-pink-50 py-12 md:py-16 overflow-hidden border-b border-sky-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/90 border border-sky-200 text-brand-600 text-xs font-bold shadow-sm">
+              <span>🇰🇷 K-Beauty Oficial en Lima, Perú</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+              <span>100% Sellado & Confiable</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-extrabold text-slate-900 leading-tight">
+              Consigue el anhelado <br class="hidden sm:inline">
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 via-sky-500 to-pink-500">
+                Efecto Glass Skin 🩵
+              </span>
+            </h1>
+
+            <p class="text-sm sm:text-base text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+              Descubre las marcas más virales y premiadas de Corea del Sur: Beauty of Joseon, SKIN1004, COSRX, Anua y Medicube. Envíos garantizados en Lima y a todo el Perú.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 pt-2">
+              <a href="#catalogo" class="w-full sm:w-auto px-7 py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider shadow-lg hover:shadow-xl transition flex items-center justify-center gap-2">
+                <span>Ver Productos</span>
+                <i class="fa-solid fa-arrow-down text-xs"></i>
+              </a>
+              <a href="https://wa.me/51920610179?text=Hola%20Sofi%20Skin%20🩵%20Vengo%20de%20la%20tienda%20online%20y%20deseo%20hacer%20un%20pedido." target="_blank" rel="noopener noreferrer" 
+                 class="w-full sm:w-auto px-7 py-3 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs uppercase tracking-wider shadow-md hover:shadow-lg transition flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Pedir por WhatsApp (920 610 179)</span>
+              </a>
+            </div>
+
+            <div class="pt-4 flex items-center justify-center lg:justify-start gap-6 text-xs text-slate-500 font-semibold">
+              <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500"></i> Stock Disponible</span>
+              <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-brand-500"></i> Compra Segura</span>
+              <span class="flex items-center gap-1.5"><i class="fa-solid fa-truck-fast text-sky-500"></i> Lima 24-48h</span>
+            </div>
+          </div>
+
+          <!-- Imagen destacada del Hero -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-md">
+              <div class="aspect-[4/3] sm:aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white relative">
+                <!-- FOTO HERO PRINCIPAL -->
+                <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=900&q=80" 
+                     alt="Sofi Skin Skincare Coreano Lima" 
+                     class="w-full h-full object-cover"
+                     onerror="this.src='https://placehold.co/800x800/e0f2fe/0284c7?text=Sofi+Skin+K-Beauty'">
+                <div class="absolute bottom-3 left-3 right-3 bg-white/90 backdrop-blur-md p-3 rounded-2xl border border-white/60 shadow flex items-center justify-between">
+                  <div>
+                    <span class="text-[10px] font-bold text-brand-600 uppercase tracking-wider">Top Ventas Lima</span>
+                    <p class="text-xs font-bold text-slate-800">Kit Glow Glass Skin 🇰🇷</p>
+                  </div>
+                  <span class="bg-brand-500 text-white text-[11px] font-bold px-3 py-1 rounded-full">S/ 199.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. BARRA DE CONFIANZA / VALUE PROPOSITIONS (ESTILO TOPBEAUTY) -->
+    <section class="bg-white py-6 border-b border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="flex items-center gap-3.5">
+            <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-500 flex items-center justify-center text-xl shrink-0">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div>
+              <h4 class="text-xs font-bold text-slate-900 uppercase tracking-wide">100% Original Garantizado</h4>
+              <p class="text-[11px] text-slate-500">Traído directamente de Corea del Sur.</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3.5">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl shrink-0">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div>
+              <h4 class="text-xs font-bold text-slate-900 uppercase tracking-wide">Envíos a todo el Perú</h4>
+              <p class="text-[11px] text-slate-500">Todo Lima y agencias a provincia.</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3.5">
+            <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-500 flex items-center justify-center text-xl shrink-0">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div>
+              <h4 class="text-xs font-bold text-slate-900 uppercase tracking-wide">Entregas 24/48 Horas</h4>
+              <p class="text-[11px] text-slate-500">Recibe tu pedido súper rápido en Lima.</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3.5">
+            <div class="w-12 h-12 rounded-2xl bg-sky-50 text-sky-500 flex items-center justify-center text-xl shrink-0">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div>
+              <h4 class="text-xs font-bold text-slate-900 uppercase tracking-wide">Asesoría Gratuita</h4>
+              <p class="text-[11px] text-slate-500">Escríbenos al 920 610 179.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FILTRA POR NECESIDAD DE TU PIEL (ESTILO TOPBEAUTY PILLS) -->
+    <section class="py-10 bg-slate-50/60 border-b border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col sm:flex-row items-center justify-between mb-6 gap-2">
+          <div>
+            <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-900">
+              ¿Cuál es la necesidad de tu piel? ✨
+            </h2>
+            <p class="text-xs text-slate-500">Encuentra la rutina ideal para tu tipo de piel con un clic.</p>
+          </div>
+          <button onclick="filterConcern('todos')" class="text-xs font-bold text-brand-600 hover:underline">
+            Ver todas las necesidades
+          </button>
+        </div>
+
+        <!-- Tarjetas interactivas de necesidades -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+          
+          <button onclick="filterConcern('acne')" class="concern-pill p-3.5 rounded-2xl bg-white border border-slate-200 hover:border-brand-400 hover:shadow-md transition text-center group">
+            <span class="text-2xl block mb-1 group-hover:scale-110 transition-transform">🌿</span>
+            <span class="text-xs font-bold text-slate-800 block">Acné y Granitos</span>
+            <span class="text-[10px] text-slate-400">Calma y purifica</span>
+          </button>
+
+          <button onclick="filterConcern('manchas')" class="concern-pill p-3.5 rounded-2xl bg-white border border-slate-200 hover:border-brand-400 hover:shadow-md transition text-center group">
+            <span class="text-2xl block mb-1 group-hover:scale-110 transition-transform">✨</span>
+            <span class="text-xs font-bold text-slate-800 block">Manchas y Tono</span>
+            <span class="text-[10px] text-slate-400">Aclara e ilumina</span>
+          </button>
+
+          <button onclick="filterConcern('hidratacion')" class="concern-pill p-3.5 rounded-2xl bg-white border border-slate-200 hover:border-brand-400 hover:shadow-md transition text-center group">
+            <span class="text-2xl block mb-1 group-hover:scale-110 transition-transform">💧</span>
+            <span class="text-xs font-bold text-slate-800 block">Hidratación</span>
+            <span class="text-[10px] text-slate-400">Piel seca o deshidratada</span>
+          </button>
+
+          <button onclick="filterConcern('poros')" class="concern-pill p-3.5 rounded-2xl bg-white border border-slate-200 hover:border-brand-400 hover:shadow-md transition text-center group">
+            <span class="text-2xl block mb-1 group-hover:scale-110 transition-transform">🫧</span>
+            <span class="text-xs font-bold text-slate-800 block">Poros y Sebo</span>
+            <span class="text-[10px] text-slate-400">Control de brillo</span>
+          </button>
+
+          <button onclick="filterConcern('sensibilidad')" class="concern-pill p-3.5 rounded-2xl bg-white border border-slate-200 hover:border-brand-400 hover:shadow-md transition text-center group">
+            <span class="text-2xl block mb-1 group-hover:scale-110 transition-transform">🌸</span>
+            <span class="text-xs font-bold text-slate-800 block">Piel Sensible</span>
+            <span class="text-[10px] text-slate-400">Alivia rojeces</span>
+          </button>
+
+          <button onclick="filterConcern('antiedad')" class="concern-pill p-3.5 rounded-2xl bg-white border border-slate-200 hover:border-brand-400 hover:shadow-md transition text-center group">
+            <span class="text-2xl block mb-1 group-hover:scale-110 transition-transform">👑</span>
+            <span class="text-xs font-bold text-slate-800 block">Antiedad y Firmeza</span>
+            <span class="text-[10px] text-slate-400">Líneas de expresión</span>
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. CATÁLOGO DE PRODUCTOS PRINCIPAL -->
+    <section id="catalogo" class="py-14 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-slate-100 gap-4">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-500">K-Beauty Store</span>
+            <h2 class="text-2xl sm:text-3xl font-serif font-bold text-slate-900 mt-1">
+              Catálogo de Cosmética Coreana 🇰🇷
+            </h2>
+            <p id="catalogSubtitle" class="text-xs text-slate-500 mt-1">Mostrando productos en stock con entrega inmediata en Lima.</p>
+          </div>
+
+          <!-- Indicador de cantidad de productos -->
+          <div class="text-xs text-slate-500 font-semibold bg-slate-50 px-4 py-2 rounded-full border border-slate-200">
+            <span id="productCounter">8</span> productos disponibles
+          </div>
+        </div>
+
+        <!-- Grid de Productos -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <!-- Inyectado dinámicamente con JavaScript -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. SECCIÓN VIDEOS DE TIKTOK DE @sofi.skin1 -->
+    <section id="tiktoks" class="py-16 bg-gradient-to-b from-sky-50/50 to-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black text-white text-xs font-bold mb-3 shadow">
+            <i class="fa-brands fa-tiktok text-sm text-pink-400"></i>
+            <span>@sofi.skin1 en TikTok</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-serif font-bold text-slate-900">
+            Nuestros Videos & Reseñas Reales ✨
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2">
+            Mira cómo lucen los productos originales, texturas reales y cómo incorporarlos en tu rutina diaria en Lima.
+          </p>
+        </div>
+
+        <!-- 3 TikToks solicitados -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-start">
+          
+          <!-- Video 1: 7700754731743923474 -->
+          <div class="tiktok-card-container flex flex-col items-center bg-white p-3.5 rounded-3xl border border-sky-100 shadow-sm hover:shadow-lg transition">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sofi.skin1/video/7700754731743923474" data-video-id="7700754731743923474" style="max-width: 605px;min-width: 310px;">
+              <section>
+                <a target="_blank" title="@sofi.skin1" href="https://www.tiktok.com/@sofi.skin1?refer=embed">@sofi.skin1</a>
+                <p>Skincare Coreano Original en Lima Perú 🩵</p>
+                <a target="_blank" title="♬ sonido original - sofi.skin1" href="https://www.tiktok.com/music/sonido-original-sofi.skin1-7700754731743923474?refer=embed">♬ sonido original - sofi.skin1</a>
+              </section>
+            </blockquote>
+            <a href="https://www.tiktok.com/@sofi.skin1/video/7700754731743923474" target="_blank" class="mt-3 text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1.5">
+              <span>Abrir en app de TikTok</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+          </div>
+
+          <!-- Video 2: 7700745564723383559 -->
+          <div class="tiktok-card-container flex flex-col items-center bg-white p-3.5 rounded-3xl border border-sky-100 shadow-sm hover:shadow-lg transition">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sofi.skin1/video/7700745564723383559" data-video-id="7700745564723383559" style="max-width: 605px;min-width: 310px;">
+              <section>
+                <a target="_blank" title="@sofi.skin1" href="https://www.tiktok.com/@sofi.skin1?refer=embed">@sofi.skin1</a>
+                <p>Novedades y favoritos K-Beauty 🇰🇷</p>
+                <a target="_blank" title="♬ sonido original - sofi.skin1" href="https://www.tiktok.com/music/sonido-original-sofi.skin1-7700745564723383559?refer=embed">♬ sonido original - sofi.skin1</a>
+              </section>
+            </blockquote>
+            <a href="https://www.tiktok.com/@sofi.skin1/video/7700745564723383559" target="_blank" class="mt-3 text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1.5">
+              <span>Abrir en app de TikTok</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+          </div>
+
+          <!-- Video 3: 7700676594041392402 -->
+          <div class="tiktok-card-container flex flex-col items-center bg-white p-3.5 rounded-3xl border border-sky-100 shadow-sm hover:shadow-lg transition">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sofi.skin1/video/7700676594041392402" data-video-id="7700676594041392402" style="max-width: 605px;min-width: 310px;">
+              <section>
+                <a target="_blank" title="@sofi.skin1" href="https://www.tiktok.com/@sofi.skin1?refer=embed">@sofi.skin1</a>
+                <p>Productos originales y confiables en Lima 🇵🇪</p>
+                <a target="_blank" title="♬ sonido original - sofi.skin1" href="https://www.tiktok.com/music/sonido-original-sofi.skin1-7700676594041392402?refer=embed">♬ sonido original - sofi.skin1</a>
+              </section>
+            </blockquote>
+            <a href="https://www.tiktok.com/@sofi.skin1/video/7700676594041392402" target="_blank" class="mt-3 text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1.5">
+              <span>Abrir en app de TikTok</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="mt-10 text-center">
+          <a href="https://www.tiktok.com/@sofi.skin1" target="_blank" rel="noopener noreferrer" 
+             class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider shadow-md hover:shadow-xl transition">
+            <i class="fa-brands fa-tiktok text-pink-400"></i>
+            <span>Seguir a @sofi.skin1 en TikTok</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BANNER DE ASESORÍA POR WHATSAPP (CALL TO ACTION) -->
+    <section class="bg-gradient-to-r from-emerald-500 to-teal-600 text-white py-12">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+        <span class="text-3xl">💬🩵</span>
+        <h3 class="text-2xl sm:text-3xl font-serif font-bold">¿Tienes dudas sobre qué productos necesita tu piel?</h3>
+        <p class="text-xs sm:text-sm text-emerald-50 max-w-xl mx-auto">
+          No compres a ciegas. Envíanos una foto o cuéntanos tu tipo de cutis al WhatsApp <strong>920 610 179</strong> y te ayudamos a crear la rutina coreana perfecta.
+        </p>
+        <div class="pt-2">
+          <a href="https://wa.me/51920610179?text=Hola%20Sofi%20Skin%20🩵%20Deseo%20asesoría%20personalizada%20gratuita%20para%20mi%20piel." target="_blank" 
+             class="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-white text-emerald-800 font-extrabold text-xs uppercase tracking-wider shadow-lg hover:bg-emerald-50 transition">
+            <i class="fa-brands fa-whatsapp text-lg text-emerald-500"></i>
+            <span>Consultar Gratis por WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 8. FOOTER ESTILO TOPBEAUTY CON MÉTODOS DE PAGO LOCALES -->
+  <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+        
+        <!-- Info Marca -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">🩵</span>
+            <span class="font-serif font-extrabold text-xl text-white">Sofi Skin</span>
+          </div>
+          <p class="text-slate-400 leading-relaxed text-xs">
+            Skincare coreano 100% original, confiable y con fecha de caducidad vigente. Tu dosis diaria de luminosidad K-Beauty en Lima, Perú 🇵🇪.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://www.tiktok.com/@sofi.skin1" target="_blank" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-pink-600 text-white flex items-center justify-center transition">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://wa.me/51920610179" target="_blank" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-emerald-600 text-white flex items-center justify-center transition">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Enlaces -->
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-4">Categorías K-Beauty</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><button onclick="filterCategory('solares')" class="hover:text-brand-300">Protectores Solares Coreanos</button></li>
+            <li><button onclick="filterCategory('serums')" class="hover:text-brand-300">Sérums y Baba de Caracol</button></li>
+            <li><button onclick="filterCategory('limpieza')" class="hover:text-brand-300">Limpieza Doble Coreana</button></li>
+            <li><button onclick="filterCategory('tonicos')" class="hover:text-brand-300">Tónicos Calmantes</button></li>
+            <li><button onclick="filterCategory('hidratacion')" class="hover:text-brand-300">Cremas Hidratantes</button></li>
+          </ul>
+        </div>
+
+        <!-- Pedidos y Envíos -->
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-4">Información de Pedidos</h4>
+          <ul class="space-y-2.5 text-slate-400">
+            <li>📍 <strong>Ubicación:</strong> Lima, Perú 🇵🇪</li>
+            <li>💌 <strong>WhatsApp Oficial:</strong> +51 920 610 179</li>
+            <li>🚚 <strong>Entregas:</strong> Delivery en Lima y Envíos Olva / Shalom a todo el país.</li>
+            <li>⏰ <strong>Horario de atención:</strong> Lunes a Domingo de 8:30 am a 9:30 pm</li>
+          </ul>
+        </div>
+
+        <!-- Métodos de Pago Perú -->
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-4">Métodos de Pago Aceptados</h4>
+          <p class="text-[11px] text-slate-400 mb-3">Coordinación 100% segura directa por WhatsApp:</p>
+          <div class="flex flex-wrap gap-2 text-[11px] font-bold">
+            <span class="px-2.5 py-1 rounded-md bg-purple-900/60 text-purple-200 border border-purple-700/50">💜 Yape</span>
+            <span class="px-2.5 py-1 rounded-md bg-cyan-900/60 text-cyan-200 border border-cyan-700/50">💙 Plin</span>
+            <span class="px-2.5 py-1 rounded-md bg-blue-900/60 text-blue-200 border border-blue-700/50">🏦 Transferencia BCP</span>
+            <span class="px-2.5 py-1 rounded-md bg-sky-900/60 text-sky-200 border border-sky-700/50">🏦 BBVA / Interbank</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 border border-slate-700">💵 Pago contra entrega (Lima previa coord.)</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500 text-[11px]">
+        <p>© 2026 Sofi Skin - Skincare Coreano Lima. Todos los derechos reservados.</p>
+        <p>Inspirado en la estructura de TopBeauty.pe con despacho exclusivo vía WhatsApp 📲</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 9. CARRITO LATERAL (DRAWER) CON BOTÓN MACRO A WHATSAPP Y BARRA DE ENVÍO GRATIS -->
+  <div id="cartDrawer" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden transition-all duration-300">
+    <div class="fixed inset-y-0 right-0 max-w-full flex">
+      <div class="w-screen max-w-md bg-white shadow-2xl flex flex-col">
+        
+        <!-- Header del Carrito -->
+        <div class="p-5 border-b border-slate-100 flex items-center justify-between bg-sky-50/50">
+          <div class="flex items-center gap-2">
+            <span class="text-xl">🩵</span>
+            <div>
+              <h3 class="font-bold text-slate-900 text-base">Bolsa de Compras</h3>
+              <p class="text-[10px] text-slate-500">Sofi Skin • Skincare Coreano Original</p>
+            </div>
+          </div>
+          <button onclick="toggleCartDrawer(false)" class="w-8 h-8 rounded-full bg-white hover:bg-slate-200 text-slate-500 flex items-center justify-center transition">
+            <i class="fa-solid fa-xmark text-sm"></i>
+          </button>
+        </div>
+
+        <!-- BARRA PROGRESO ENVÍO GRATIS (ESTILO TOPBEAUTY: S/ 199) -->
+        <div class="bg-brand-50 p-3.5 border-b border-brand-100">
+          <div class="flex items-center justify-between text-xs font-bold mb-1.5" id="shippingMessage">
+            <!-- Dinámico con JS -->
+          </div>
+          <div class="w-full bg-white h-2 rounded-full overflow-hidden border border-brand-200">
+            <div id="shippingProgressBar" class="h-full bg-emerald-500 transition-all duration-500" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <!-- Lista de Productos en la bolsa -->
+        <div id="cartItemsContainer" class="flex-1 overflow-y-auto p-4 space-y-3">
+          <!-- Se inyecta con JS -->
+        </div>
+
+        <!-- Checkout Datos y Botón Macro WhatsApp -->
+        <div class="p-5 bg-slate-50 border-t border-slate-200 space-y-3.5">
+          
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <div>
+              <label class="block text-[10px] font-bold text-slate-600 uppercase mb-1">Nombre y Apellido:</label>
+              <input type="text" id="checkoutName" placeholder="Tu nombre" class="w-full px-3 py-2 bg-white rounded-xl border border-slate-300 focus:outline-none focus:border-brand-500 text-xs">
+            </div>
+            <div>
+              <label class="block text-[10px] font-bold text-slate-600 uppercase mb-1">Distrito / Ciudad:</label>
+              <input type="text" id="checkoutLocation" placeholder="Ej: Miraflores / Los Olivos" class="w-full px-3 py-2 bg-white rounded-xl border border-slate-300 focus:outline-none focus:border-brand-500 text-xs">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-[10px] font-bold text-slate-600 uppercase mb-1">Nota o consulta adicional (opcional):</label>
+            <input type="text" id="checkoutNotes" placeholder="Ej: Es para piel grasa / Entregar por la tarde" class="w-full px-3 py-2 bg-white rounded-xl border border-slate-300 focus:outline-none focus:border-brand-500 text-xs">
+          </div>
+
+          <!-- Total -->
+          <div class="flex items-center justify-between pt-1">
+            <div>
+              <span class="text-xs font-semibold text-slate-500 block">Subtotal estimado:</span>
+              <span class="text-[11px] text-emerald-600 font-semibold" id="shippingStatusText">Envío por coordinar</span>
+            </div>
+            <span id="cartDrawerTotal" class="text-2xl font-extrabold text-slate-900">S/ 0.00</span>
+          </div>
+
+          <!-- BOTÓN MACRO DE COMPRA POR WHATSAPP -->
+          <button onclick="checkoutViaWhatsAppMacro()" class="w-full py-3.5 px-4 bg-emerald-500 hover:bg-emerald-600 active:scale-[0.98] text-white rounded-2xl font-bold text-sm shadow-md hover:shadow-lg transition flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span>Pedir por WhatsApp (Macro 920 610 179)</span>
+          </button>
+
+          <p class="text-[10px] text-center text-slate-400">
+            🔒 Al presionar el botón se enviará la lista detallada a nuestro chat de WhatsApp para coordinar pago con Yape/Plin y la entrega.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 10. BOTÓN FLOTANTE FIJO DE WHATSAPP -->
+  <aside aria-label="Contacto Rápido" class="fixed bottom-6 right-6 z-40 group">
+    <div class="absolute -top-9 right-0 bg-slate-900 text-white text-[11px] font-semibold px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap pointer-events-none shadow">
+      ¿Dudas? Chatea al 920 610 179 💬
+    </div>
+    <a href="https://wa.me/51920610179?text=Hola%20Sofi%20Skin%20🩵%20Quisiera%20hacer%20un%20pedido%20de%20skincare%20coreano." 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-2xl whatsapp-glow transition transform hover:scale-110"
+       title="Consultar por WhatsApp">
+      <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+  </aside>
+
+  <!-- NOTIFICACIÓN TOAST -->
+  <div id="toastNotification" class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 bg-slate-900 text-white text-xs py-2.5 px-5 rounded-full shadow-2xl opacity-0 pointer-events-none transition-all duration-300 flex items-center gap-2">
+    <i class="fa-solid fa-circle-check text-emerald-400"></i>
+    <span id="toastMessage">Producto agregado</span>
+  </div>
+
+  <!-- SDK OFICIAL DE EMBED TIKTOK -->
+  <script async src="https://www.tiktok.com/embed.js"></script>
+
+  <!-- LÓGICA JAVASCRIPT: E-COMMERCE, BÚSQUEDA, FILTROS Y MACRO WHATSAPP -->
+  <script>
+    const WHATSAPP_PHONE = "51920610179";
+    const FREE_SHIPPING_THRESHOLD = 199.00; // Como en TopBeauty Perú (S/ 199)
+
+    // BASE DE DATOS DE PRODUCTOS COREANOS
+    // NOTA: Para cambiar las imágenes de los productos, edita la propiedad 'image'.
+    const products = [
+      {
+        id: 1,
+        name: "Beauty of Joseon - Relief Sun: Rice + Probiotics SPF50+ PA++++ (50ml)",
+        brand: "Beauty of Joseon",
+        category: "solares",
+        concern: "sensibilidad",
+        regularPrice: 95.00,
+        price: 75.00,
+        discount: "-21%",
+        badge: "Bestseller ☀️",
+        // REEMPLAZAR AQUÍ LA IMAGEN DEL PRODUCTO: URL_O_ARCHIVO
+        image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80",
+        description: "Protector solar químico enriquecido con 30% de extracto de arroz y probióticos de granos fermentados. Acabado hidratante ligero sin residuos blancos."
+      },
+      {
+        id: 2,
+        name: "COSRX - Advanced Snail 96 Mucin Power Essence (100ml)",
+        brand: "COSRX",
+        category: "serums",
+        concern: "hidratacion",
+        regularPrice: 105.00,
+        price: 85.00,
+        discount: "-19%",
+        badge: "Glass Skin ✨",
+        // REEMPLAZAR AQUÍ LA IMAGEN DEL PRODUCTO: URL_O_ARCHIVO
+        image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80",
+        description: "Formulado con 96% de mucina de caracol filtrada para nutrir intensamente, reparar la barrera cutánea dañada y dar brillo de porcelana."
+      },
+      {
+        id: 3,
+        name: "Anua - Heartleaf 77% Soothing Toner (250ml)",
+        brand: "Anua",
+        category: "tonicos",
+        concern: "acne",
+        regularPrice: 110.00,
+        price: 89.00,
+        discount: "-19%",
+        badge: "Viral TikTok 🫧",
+        // REEMPLAZAR AQUÍ LA IMAGEN DEL PRODUCTO: URL_O_ARCHIVO
+        image: "https://images.unsplash.com/photo-1608248597359-0026e680a6b7?auto=format&fit=crop&w=600&q=80",
+        description: "El tónico calmante #1 de Corea. 77% de extracto de Houttuynia Cordata que equilibra el pH y calma brotes, rojeces e irritaciones."
+      },
+      {
+        id: 4,
+        name: "SKIN1004 - Madagascar Centella Asiatica Ampoule (100ml)",
+        brand: "SKIN1004",
+        category: "serums",
+        concern: "sensibilidad",
+        regularPrice: 109.00,
+        price: 88.00,
+        discount: "-19%",
+        badge: "100% Pura 💧",
+        // REEMPLAZAR AQUÍ LA IMAGEN DEL PRODUCTO: URL_O_ARCHIVO
+        image: "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=600&q=80",
+        description: "Ampolla elaborada únicamente con extracto puro de Centella Asiática de Madagascar. Repara y fortalece la piel sensibilizada."
+      },
+      {
+        id: 5,
+        name: "Axis-Y - Dark Spot Correcting Glow Serum (50ml)",
+        brand: "Axis-Y",
+        category: "serums",
+        concern: "manchas",
+        regularPrice: 98.00,
+        price: 78.00,
+        discount: "-20%",
+        badge: "Antimanchas 🤍",
+        // REEMPLAZAR AQUÍ LA IMAGEN DEL PRODUCTO: URL_O_ARCHIVO
+        image: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80",
+        description: "Tratamiento con Niacinamida 5% y escualano vegetal para borrar marcas post-acné y unificar el tono con un acabado radiante natural."
+      },
+      {
+        id: 6,
+        name: "Round Lab - 1025 Dokdo Cleanser Limpiador Facial Suave (150ml)",
+        brand: "Round Lab",
+        category: "limpieza",
+        concern: "poros",
+        regularPrice: 75.00,
+        price: 59.00,
+        discount: "-21%",
+        badge: "Favorito Corea 🏆",
+        // REEMPLAZAR AQUÍ LA IMAGEN DEL PRODUCTO: URL_O_ARCHIVO
+        image: "https://images.unsplash.com/photo-1556228722-d0b77732a325?auto=format&fit=crop&w=600&q=80",
+        description: "Espuma densa y rica con minerales de agua de mar profundo. Limpia micro-polvo y sebo sin dejar sensación tirante ni irritar."
+      },
+      {
+        id: 7,
+        name: "Beauty of Joseon - Dynasty Cream Hidratante de Arroz & Ginseng (50ml)",
+        brand: "Beauty of Joseon",
+        category: "hidratacion",
+        concern: "antiedad",
+        regularPrice: 105.00,
+        price: 84.00,
+        discount: "-20%",
+        badge: "Ginseng Real 👑",
+        // REEMPLAZAR AQUÍ LA IMAGEN DEL PRODUCTO: URL_O_ARCHIVO
+        image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80",
+        description: "Crema inspirada en la medicina tradicional Hanbang con agua de salvado de arroz y ginseng para devolver elasticidad y nutrición profunda."
+      },
+      {
+        id: 8,
+        name: "Tocobo - Bio Watery Sun Cream SPF50+ PA++++ (50ml)",
+        brand: "Tocobo",
+        category: "solares",
+        concern: "poros",
+        regularPrice: 92.00,
+        price: 74.00,
+        discount: "-20%",
+        badge: "Acabado Mate 🌿",
+        // REEMPLAZAR AQUÍ LA IMAGEN DEL PRODUCTO: URL_O_ARCHIVO
+        image: "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=600&q=80",
+        description: "Protector solar ligero tipo esencia de agua con ácido hialurónico natural y beta-glucanos. Controla el brillo sin sensación pesada."
+      }
+    ];
+
+    let cart = [];
+    let currentFilteredList = [...products];
+
+    // Renderizar Productos en el Catálogo
+    function renderProductGrid(items) {
+      const grid = document.getElementById('productGrid');
+      const counter = document.getElementById('productCounter');
+      counter.textContent = items.length;
+      grid.innerHTML = '';
+
+      if (items.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full text-center py-12">
+            <i class="fa-solid fa-box-open text-4xl text-slate-300 mb-2"></i>
+            <p class="text-sm font-bold text-slate-700">No encontramos productos con ese criterio</p>
+            <p class="text-xs text-slate-400 mt-1">Intenta con otra búsqueda o limpia los filtros.</p>
+            <button onclick="resetFilters()" class="mt-4 px-4 py-2 rounded-full bg-brand-500 text-white text-xs font-bold">Ver todos los productos</button>
+          </div>
+        `;
+        return;
+      }
+
+      items.forEach(prod => {
+        const card = document.createElement('div');
+        card.className = "bg-white rounded-2xl border border-slate-200/90 hover:border-brand-300 hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group";
+        
+        card.innerHTML = `
+          <!-- Imagen del producto y badges -->
+          <div class="relative aspect-square overflow-hidden bg-slate-50">
+            <img src="${prod.image}" 
+                 alt="${prod.name}" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.src='https://placehold.co/600x600/e0f2fe/0284c7?text=Sofi+Skin+Coreano'">
+            
+            <!-- Badges estilo TopBeauty -->
+            <div class="absolute top-2.5 left-2.5 flex flex-col gap-1 items-start">
+              <span class="bg-red-500 text-white text-[10px] font-extrabold px-2 py-0.5 rounded shadow">
+                ${prod.discount}
+              </span>
+              <span class="bg-brand-500 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">
+                ${prod.badge}
+              </span>
+            </div>
+
+            <span class="absolute top-2.5 right-2.5 bg-white/90 backdrop-blur-sm text-[10px] font-extrabold text-slate-800 px-2 py-0.5 rounded-full shadow-xs">
+              🇰🇷 100% Original
+            </span>
+          </div>
+
+          <!-- Información del Producto -->
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-extrabold uppercase tracking-wider text-brand-600 block mb-0.5">${prod.brand}</span>
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900 line-clamp-2 leading-snug group-hover:text-brand-600 transition-colors" title="${prod.name}">
+                ${prod.name}
+              </h3>
+              <p class="text-[11px] text-slate-500 mt-1 line-clamp-2 leading-relaxed">
+                ${prod.description}
+              </p>
+            </div>
+
+            <div class="pt-3 mt-3 border-t border-slate-100">
+              <!-- Precios estilo Shopify / TopBeauty -->
+              <div class="flex items-baseline gap-2 mb-3">
+                <span class="text-base sm:text-lg font-black text-slate-900">S/ ${prod.price.toFixed(2)}</span>
+                <span class="text-xs text-slate-400 line-through">S/ ${prod.regularPrice.toFixed(2)}</span>
+              </div>
+
+              <!-- Acciones: Añadir a la Bolsa & Pedir directo por WhatsApp -->
+              <div class="grid grid-cols-2 gap-2">
+                <button onclick="addToCart(${prod.id})" class="py-2.5 px-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold flex items-center justify-center gap-1.5 transition">
+                  <i class="fa-solid fa-bag-shopping text-xs"></i>
+                  <span>Añadir</span>
+                </button>
+                <button onclick="buyNowWhatsAppSingle(${prod.id})" class="py-2.5 px-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-bold flex items-center justify-center gap-1.5 transition shadow-sm">
+                  <i class="fa-brands fa-whatsapp text-sm"></i>
+                  <span>WSP Directo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // Filtros por Categoría de la barra superior
+    function filterCategory(cat) {
+      document.querySelectorAll('.nav-cat-btn').forEach(btn => {
+        btn.classList.remove('bg-slate-900', 'text-white');
+        btn.classList.add('bg-slate-100', 'text-slate-700');
+      });
+
+      if (event && event.currentTarget && event.currentTarget.classList.contains('nav-cat-btn')) {
+        event.currentTarget.classList.remove('bg-slate-100', 'text-slate-700');
+        event.currentTarget.classList.add('bg-slate-900', 'text-white');
+      }
+
+      if (cat === 'todos') {
+        currentFilteredList = [...products];
+        document.getElementById('catalogSubtitle').textContent = "Mostrando todos los productos en stock en Lima.";
+      } else {
+        currentFilteredList = products.filter(p => p.category === cat);
+        document.getElementById('catalogSubtitle').textContent = `Filtrado por categoría: ${cat.toUpperCase()}`;
+      }
+      renderProductGrid(currentFilteredList);
+    }
+
+    // Filtros por Necesidad de la Piel (Pills TopBeauty)
+    function filterConcern(concern) {
+      if (concern === 'todos') {
+        currentFilteredList = [...products];
+        document.getElementById('catalogSubtitle').textContent = "Mostrando todas las necesidades.";
+      } else {
+        currentFilteredList = products.filter(p => p.concern === concern);
+        document.getElementById('catalogSubtitle').textContent = `Mostrando productos ideales para: ${concern.toUpperCase()}`;
+      }
+      renderProductGrid(currentFilteredList);
+      document.getElementById('catalogo').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Búsqueda en tiempo real
+    function handleSearch(query) {
+      const q = query.toLowerCase().trim();
+      const clearBtn = document.getElementById('clearSearchBtn');
+      if (clearBtn) {
+        if (q.length > 0) clearBtn.classList.remove('hidden');
+        else clearBtn.classList.add('hidden');
+      }
+
+      if (!q) {
+        currentFilteredList = [...products];
+      } else {
+        currentFilteredList = products.filter(p => 
+          p.name.toLowerCase().includes(q) ||
+          p.brand.toLowerCase().includes(q) ||
+          p.description.toLowerCase().includes(q) ||
+          p.concern.toLowerCase().includes(q)
+        );
+        document.getElementById('catalogSubtitle').textContent = `Resultados para "${query}" (${currentFilteredList.length} encontrados)`;
+      }
+      renderProductGrid(currentFilteredList);
+    }
+
+    function clearSearch() {
+      const inputDesktop = document.getElementById('searchInputDesktop');
+      const inputMobile = document.getElementById('searchInputMobile');
+      if (inputDesktop) inputDesktop.value = '';
+      if (inputMobile) inputMobile.value = '';
+      document.getElementById('clearSearchBtn').classList.add('hidden');
+      currentFilteredList = [...products];
+      document.getElementById('catalogSubtitle').textContent = "Mostrando todos los productos en stock en Lima.";
+      renderProductGrid(currentFilteredList);
+    }
+
+    function resetFilters() {
+      clearSearch();
+      filterCategory('todos');
+    }
+
+    // -------------------------------------------------------------
+    // LÓGICA DEL CARRITO & BOTÓN MACRO WHATSAPP
+    // -------------------------------------------------------------
+    function addToCart(productId) {
+      const item = products.find(p => p.id === productId);
+      if (!item) return;
+
+      const exist = cart.find(p => p.id === productId);
+      if (exist) {
+        exist.quantity += 1;
+      } else {
+        cart.push({ ...item, quantity: 1 });
+      }
+
+      updateCartState();
+      showToast(`¡Añadido: ${item.name.substring(0, 25)}...!`);
+    }
+
+    function updateQuantity(productId, delta) {
+      const index = cart.findIndex(p => p.id === productId);
+      if (index === -1) return;
+
+      cart[index].quantity += delta;
+      if (cart[index].quantity <= 0) {
+        cart.splice(index, 1);
+      }
+      updateCartState();
+    }
+
+    function removeFromCart(productId) {
+      cart = cart.filter(p => p.id !== productId);
+      updateCartState();
+    }
+
+    function updateCartState() {
+      const totalCount = cart.reduce((acc, cur) => acc + cur.quantity, 0);
+      const totalPrice = cart.reduce((acc, cur) => acc + (cur.price * cur.quantity), 0);
+
+      // Header UI
+      document.getElementById('cartCount').textContent = totalCount;
+      document.getElementById('headerCartTotal').textContent = `S/ ${totalPrice.toFixed(2)}`;
+
+      // Modal Drawer UI
+      document.getElementById('cartDrawerTotal').textContent = `S/ ${totalPrice.toFixed(2)}`;
+
+      // Barra de Envío Gratis estilo TopBeauty
+      const shippingMessage = document.getElementById('shippingMessage');
+      const shippingBar = document.getElementById('shippingProgressBar');
+      const shippingStatusText = document.getElementById('shippingStatusText');
+
+      if (totalPrice >= FREE_SHIPPING_THRESHOLD) {
+        shippingMessage.innerHTML = `<span>🎉 ¡Felicidades! Tienes <strong class="text-emerald-700">ENVÍO GRATIS</strong> en Lima</span><span>100%</span>`;
+        shippingBar.style.width = '100%';
+        shippingBar.classList.remove('bg-brand-500');
+        shippingBar.classList.add('bg-emerald-500');
+        shippingStatusText.textContent = "✅ ¡Envío Gratis Aplicado a Lima!";
+      } else {
+        const diff = (FREE_SHIPPING_THRESHOLD - totalPrice).toFixed(2);
+        const percent = Math.min(100, (totalPrice / FREE_SHIPPING_THRESHOLD) * 100);
+        shippingMessage.innerHTML = `<span>Agrega <strong>S/ ${diff}</strong> para tener <strong>Envío Gratis</strong> en Lima</span><span>${Math.round(percent)}%</span>`;
+        shippingBar.style.width = `${percent}%`;
+        shippingBar.classList.add('bg-brand-500');
+        shippingBar.classList.remove('bg-emerald-500');
+        shippingStatusText.textContent = "Envío por coordinar (o gratis +S/199)";
+      }
+
+      // Renderizar items del drawer
+      const container = document.getElementById('cartItemsContainer');
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-16 text-slate-400">
+            <i class="fa-solid fa-basket-shopping text-5xl mb-3 text-slate-300"></i>
+            <p class="text-sm font-bold text-slate-700">Tu bolsa está vacía</p>
+            <p class="text-xs text-slate-400 mt-1">Agrega los mejores productos coreanos para tu rutina Glow.</p>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = '';
+      cart.forEach(item => {
+        const sub = item.price * item.quantity;
+        const div = document.createElement('div');
+        div.className = "flex items-center gap-3 p-3 bg-white rounded-2xl border border-slate-200/80 shadow-xs";
+        div.innerHTML = `
+          <img src="${item.image}" alt="${item.name}" class="w-14 h-14 object-cover rounded-xl bg-slate-50 border border-slate-100" onerror="this.src='https://placehold.co/100x100?text=SofiSkin'">
+          <div class="flex-1 min-w-0">
+            <span class="text-[9px] font-extrabold uppercase text-brand-600">${item.brand}</span>
+            <h4 class="text-xs font-bold text-slate-800 truncate">${item.name}</h4>
+            <p class="text-xs font-extrabold text-slate-900 mt-0.5">S/ ${item.price.toFixed(2)}</p>
+            
+            <div class="flex items-center gap-2 mt-1.5">
+              <button onclick="updateQuantity(${item.id}, -1)" class="w-5 h-5 rounded-md bg-slate-100 hover:bg-slate-200 text-xs font-bold flex items-center justify-center">-</button>
+              <span class="text-xs font-semibold">${item.quantity}</span>
+              <button onclick="updateQuantity(${item.id}, 1)" class="w-5 h-5 rounded-md bg-slate-100 hover:bg-slate-200 text-xs font-bold flex items-center justify-center">+</button>
+            </div>
+          </div>
+          <div class="text-right">
+            <p class="text-xs font-extrabold text-slate-900">S/ ${sub.toFixed(2)}</p>
+            <button onclick="removeFromCart(${item.id})" class="text-slate-400 hover:text-red-500 text-xs mt-3 block ml-auto">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </div>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    function toggleCartDrawer(open) {
+      const drawer = document.getElementById('cartDrawer');
+      if (open) {
+        drawer.classList.remove('hidden');
+        updateCartState();
+      } else {
+        drawer.classList.add('hidden');
+      }
+    }
+
+    // BOTÓN MACRO QUE DERIVA AL WHATSAPP DE SOFI SKIN (920 610 179)
+    function checkoutViaWhatsAppMacro() {
+      if (cart.length === 0) {
+        showToast("Tu bolsa está vacía. Selecciona productos primero.");
+        return;
+      }
+
+      const name = document.getElementById('checkoutName').value.trim() || 'Cliente';
+      const location = document.getElementById('checkoutLocation').value.trim() || 'Lima, Perú';
+      const notes = document.getElementById('checkoutNotes').value.trim() || 'Ninguna';
+
+      let total = 0;
+      let itemsSummary = "";
+
+      cart.forEach((it, idx) => {
+        const sub = it.price * it.quantity;
+        total += sub;
+        itemsSummary += `${idx + 1}. *${it.name}*\n   ▸ Cantidad: ${it.quantity} und. | Subtotal: S/ ${sub.toFixed(2)}\n`;
+      });
+
+      const freeShippingText = total >= FREE_SHIPPING_THRESHOLD 
+        ? "✅ *Aplica para ENVÍO GRATIS en Lima*" 
+        : "📦 Envío regular por coordinar según distrito";
+
+      const message = 
+        `🌸 *¡HOLA SOFI SKIN! NUEVO PEDIDO E-COMMERCE* 🩵\n\n` +
+        `🫧 *Productos solicitados:*\n` +
+        `${itemsSummary}\n` +
+        `💰 *TOTAL COMPRA: S/ ${total.toFixed(2)}*\n` +
+        `${freeShippingText}\n\n` +
+        `👤 *Cliente:* ${name}\n` +
+        `📍 *Distrito / Ciudad:* ${location}\n` +
+        `📝 *Nota:* ${notes}\n\n` +
+        `¿Me confirman disponibilidad y los datos de Yape / Plin / Transferencia para concretar el envío? ¡Gracias! ✨🇰🇷`;
+
+      const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    }
+
+    // Botón de compra rápida individual
+    function buyNowWhatsAppSingle(productId) {
+      const prod = products.find(p => p.id === productId);
+      if (!prod) return;
+
+      const message = 
+        `¡Hola Sofi Skin! 🩵 Deseo pedir este producto:\n\n` +
+        `🫧 *${prod.name}*\n` +
+        `💰 *Precio de Oferta:* S/ ${prod.price.toFixed(2)} (Antes S/ ${prod.regularPrice.toFixed(2)})\n` +
+        `📍 Entrega en: Lima, Perú 🇵🇪\n\n` +
+        `¿Tienen stock disponible para entrega inmediata? ✨`;
+
+      const url = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotification');
+      const text = document.getElementById('toastMessage');
+      text.textContent = msg;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 2600);
+    }
+
+    // Cerrar drawer con click fuera
+    document.getElementById('cartDrawer').addEventListener('click', (e) => {
+      if (e.target.id === 'cartDrawer') {
+        toggleCartDrawer(false);
+      }
+    });
+
+    // Iniciar
+    window.onload = function() {
+      renderProductGrid(products);
+      updateCartState();
+    };
+  </script>
+</body>
+</html>
